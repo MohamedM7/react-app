@@ -7,6 +7,12 @@ class Menu extends Component {
         this.state = {
           selectedDish:null
         };
+        console.log("constractor is invoked")
+    }
+
+    componentDidMount(){
+      console.log("componentDidMount is invoked")
+
     }
 
     onDishSelect(dish){
@@ -50,6 +56,7 @@ class Menu extends Component {
               </div>
             );
         });
+        console.log("render method has invoked")
 
         return (
           <div className="container">
